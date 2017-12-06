@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LHi-U3-HXW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Use Case 1-->
+        <scene sceneID="OnW-lf-sWY">
+            <objects>
+                <viewController title="Use Case 1" id="LHi-U3-HXW" customClass="LocateGuestViewController" customModule="Carnival" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uAK-fw-qmS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="92" estimatedRowHeight="92" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vMx-eI-3aK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="WCA-sg-eeG">
+                                    <rect key="frame" x="0.0" y="120" width="375" height="0.0"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="DdD-Ml-2kM" detailTextLabel="XyM-x7-RGu" style="IBUITableViewCellStyleSubtitle" id="VFY-DB-Glz">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="92"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VFY-DB-Glz" id="p5V-5g-wUE">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="91.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DdD-Ml-2kM">
+                                                    <rect key="frame" x="24" y="23" width="40.5" height="21.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                                    <color key="textColor" red="0.062745098040000002" green="0.33333333329999998" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XyM-x7-RGu">
+                                                    <rect key="frame" x="24" y="47.5" width="56" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.22352941176470587" green="0.22352941176470587" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="24" minY="0.0" maxX="24" maxY="0.0"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="LHi-U3-HXW" id="3qc-3v-ENk"/>
+                                    <outlet property="delegate" destination="LHi-U3-HXW" id="oMo-1y-h3u"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="q1z-Y4-Jlb" firstAttribute="bottom" secondItem="vMx-eI-3aK" secondAttribute="bottom" id="5EZ-V2-Gff"/>
+                            <constraint firstItem="q1z-Y4-Jlb" firstAttribute="trailing" secondItem="vMx-eI-3aK" secondAttribute="trailing" id="AR2-8k-YYd"/>
+                            <constraint firstItem="vMx-eI-3aK" firstAttribute="leading" secondItem="q1z-Y4-Jlb" secondAttribute="leading" id="Hkf-0u-Y1S"/>
+                            <constraint firstItem="vMx-eI-3aK" firstAttribute="top" secondItem="q1z-Y4-Jlb" secondAttribute="top" id="M7P-cw-ZE0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q1z-Y4-Jlb"/>
+                    </view>
+                    <connections>
+                        <segue destination="Cd9-yr-NAb" kind="show" identifier="CustomerViewController" id="3ux-Yh-Lgi"/>
+                        <segue destination="3SW-7Y-UlN" kind="show" identifier="EmployeeViewController" id="4Rd-ui-SLR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfU-CE-SQI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229.59999999999999" y="155.17241379310346"/>
+        </scene>
+        <!--Customer-->
+        <scene sceneID="ALP-GE-SQB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Customer" id="Cd9-yr-NAb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7w7-ph-C4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="-210"/>
+        </scene>
+        <!--Employee-->
+        <scene sceneID="Yh0-CM-hD4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Employee" id="3SW-7Y-UlN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dXX-Ia-Aw9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="841" y="420"/>
+        </scene>
+    </scenes>
+</document>

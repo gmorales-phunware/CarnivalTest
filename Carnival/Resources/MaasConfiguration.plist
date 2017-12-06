@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>buildingId</key>
+	<real>52203</real>
+	<key>name</key>
+	<string>Carnaval</string>
+	<key>App</key>
+	<dict>
+		<key>appId</key>
+		<string>1383</string>
+		<key>accessKey</key>
+		<string>aca26bfdc28d44faf6a4f072bd6960e232970ff0</string>
+		<key>signatureKey</key>
+		<string>fe53376845e917bf9ccc480bbc09f22c6e125ea3</string>
+	</dict>
+</dict>
+</plist>

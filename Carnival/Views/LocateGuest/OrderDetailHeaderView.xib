@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view multipleTouchEnabled="YES" contentMode="scaleToFill" id="ZZy-Y7-c86" customClass="OrderDetailHeaderView" customModule="Carnival" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="503-cl-rAa">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muX-rt-vPr">
+                            <rect key="frame" x="16" y="15" width="34.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" red="0.52935183050000001" green="0.52944636339999995" blue="0.52934587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="muX-rt-vPr" firstAttribute="leading" secondItem="503-cl-rAa" secondAttribute="leading" constant="16" id="eiI-jy-Mq2"/>
+                        <constraint firstItem="muX-rt-vPr" firstAttribute="centerY" secondItem="503-cl-rAa" secondAttribute="centerY" id="nar-Ql-Vl2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="503-cl-rAa" secondAttribute="trailing" id="Bkt-jX-OFS"/>
+                <constraint firstItem="503-cl-rAa" firstAttribute="leading" secondItem="ZZy-Y7-c86" secondAttribute="leading" id="QrU-51-DVi"/>
+                <constraint firstItem="503-cl-rAa" firstAttribute="top" secondItem="ZZy-Y7-c86" secondAttribute="top" id="Y6y-rG-P2N"/>
+                <constraint firstAttribute="bottom" secondItem="503-cl-rAa" secondAttribute="bottom" id="dMG-Wt-ig7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="SIV-Vc-BUf"/>
+            <connections>
+                <outlet property="orderTitle" destination="muX-rt-vPr" id="wP4-1P-jpW"/>
+            </connections>
+            <point key="canvasLocation" x="482" y="736"/>
+        </view>
+    </objects>
+</document>

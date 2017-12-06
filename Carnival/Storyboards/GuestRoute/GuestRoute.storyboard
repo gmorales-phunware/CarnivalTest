@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CEU-Md-DwE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="xtN-ev-Ort">
+            <objects>
+                <viewController id="0LJ-ff-eLN" customClass="GuestMapViewController" customModule="Carnival" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="caH-2H-dYG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gc7-Qn-c3u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pxC-zz-d8q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="VrE-pP-wrf"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="s4l-gr-xXk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cqs-Qt-hvQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-644" y="1984"/>
+        </scene>
+        <!--Guest Route View Controller-->
+        <scene sceneID="tJ7-YJ-IXl">
+            <objects>
+                <viewController id="CEU-Md-DwE" customClass="GuestRouteViewController" customModule="Carnival" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nX5-UP-ag5"/>
+                        <viewControllerLayoutGuide type="bottom" id="kAj-33-zv0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ub7-CJ-R42">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p75-yd-4Yo" userLabel="MapView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <connections>
+                                    <segue destination="0LJ-ff-eLN" kind="embed" id="Mlr-yo-8Yj"/>
+                                </connections>
+                            </containerView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZe-6M-vI3" customClass="ToolbarView" customModule="Carnival" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="E1w-e6-boG"/>
+                                </constraints>
+                                <items/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="p75-yd-4Yo" secondAttribute="trailing" id="Bqw-Gn-tgL"/>
+                            <constraint firstItem="kAj-33-zv0" firstAttribute="top" secondItem="vZe-6M-vI3" secondAttribute="bottom" id="X2B-BI-vS0"/>
+                            <constraint firstItem="p75-yd-4Yo" firstAttribute="top" secondItem="nX5-UP-ag5" secondAttribute="bottom" id="b7i-vm-dcV"/>
+                            <constraint firstItem="vZe-6M-vI3" firstAttribute="top" secondItem="p75-yd-4Yo" secondAttribute="bottom" id="fYt-Ws-ukP"/>
+                            <constraint firstItem="p75-yd-4Yo" firstAttribute="leading" secondItem="ub7-CJ-R42" secondAttribute="leading" id="hS5-ML-xkd"/>
+                            <constraint firstItem="vZe-6M-vI3" firstAttribute="leading" secondItem="ub7-CJ-R42" secondAttribute="leading" id="ih6-g0-Jvs"/>
+                            <constraint firstAttribute="trailing" secondItem="vZe-6M-vI3" secondAttribute="trailing" id="ooc-i3-VVF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d7C-9a-CAj"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="Yar-GH-mzZ"/>
+                    <connections>
+                        <outlet property="mapContainer" destination="p75-yd-4Yo" id="T3f-0t-v3N"/>
+                        <outlet property="toolbar" destination="vZe-6M-vI3" id="Dib-I7-bJb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cbq-e5-aaw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-420" y="1227"/>
+        </scene>
+    </scenes>
+</document>

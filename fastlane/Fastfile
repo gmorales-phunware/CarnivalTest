@@ -1,0 +1,305 @@
+# JENKINS BUILD
+
+# import "../build_script/iOSNew/CommonFastlane/Fastfile"
+
+import_from_git(
+    url: "ssh://git@bitbucket.phunware.com:7999/services/dev-scripts-fastlane.git",
+    branch: "iOSNew",
+    path: "ios/fastlane/Fastfile"
+)
+
+private_lane :configure_build do
+
+    set_xcode_scheme(
+        name: "Carnival"
+    )
+
+    set_xcode_workspace(
+        name: "Carnival.xcworkspace"
+    )
+
+    set_configuration(
+        name: "Release"
+    )
+
+    set_bundle_identifier(
+        name: "com.phunware.CarnivalPOC"
+    )
+
+    set_signing_config(
+      cert_file: "Certificates/enterprise.p12",
+      cert_pw: "k3YM@$ter!",
+      profileSpecifier: "com.phunware.CarnivalPOC InHouse",
+      customProfilesPath: "Certificates/",
+      teamId: "84CK77G588",
+      identity: "iPhone Distribution: Phunware, Inc."
+    )
+
+    set_xcode_select_version(
+        version: "~> 9"
+    )
+
+    set_s3_accessKey(
+        key: "AKIAINDAKLTS6EYU26IQ"
+    )
+
+    set_s3_secretKey(
+        key: "R46/pVie0XjzzZJ6bRTmufGHIDujCkVPbNz6xARF"
+    )
+
+    set_s3_bucketName(
+        name: "redimedi"
+    )
+
+    do_not_specify_provisioning_profile()
+
+    publish_to_enterprise_ota(
+      signingConfig: "enterprise"
+    )
+
+   #  set_slack_webhook(
+   #    slack: ""
+   # )
+
+end
+
+# LOCAL BUILD
+
+# default_platform :ios
+#
+# platform :ios do
+# ############################## PRE ##############################
+#
+#   before_all do
+#     # ENV["SLACK_URL"] ||= "https://hooks.slack.com/services/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"
+#     ENV['SIGNING_IDENTITY_ADHOC'] = "AdHoc"
+#     ENV['SIGNING_IDENTITY_DEV'] = "Develop"
+#     ENV['SIGNING_IDENTITY_PROD'] = "AppStore"
+#     ENV['SIGNING_IDENTITY_ENT'] = "Release"
+#
+#     clear_derived_data
+#     cocoapods
+#   end
+#
+# ######################### PUBLIC LANES ##########################
+#
+#   desc "Build and prepare the app for testing"
+#   lane :build_for_test do
+#     xcodebuild scheme: 'Carnival',scheme: "Carnival", destination: "OS=10,name=iPhone 7"
+#   end
+#
+#   desc "Run all iOS tests on an iPad"
+#   lane :test do
+#     scan(
+#     workspace: "Carnival.xcworkspace",
+#     scheme: "Carnival",
+#     clean: true,
+#     open_report: true,
+#     device: "iPhone 7"
+#     )
+#     notification(subtitle: "Finished Testing", message: "Ready to build...")
+#     slack(
+#     message: "fastlane was successful :rocket:",
+#     success: true,
+#     default_payloads: [:lane, :test_result, :git_branch, :git_author]
+#     )
+#   end
+#
+#   lane :incremental do
+#     fabric_adhoc(scheme: "Carnival")
+#   end
+#
+#   lane :staging do
+#     fabric(scheme: "AdHoc")
+#   end
+#
+#   lane :beta_build do
+#     beta(scheme: "Carnival")
+#   end
+#
+# ######################### PRIVATE LANES #########################
+#   private_lane :fabric_adhoc do |options|
+#     notification(subtitle: "Ad Hoc build", message: "Building...")
+#     scheme = options[:scheme]
+#
+#     sigh(
+#       adhoc: false,
+#       force: false,
+#       filename: "InHouse_com.phunware.CarnivalPOC.mobileprovision"
+#     )
+#
+#     build(
+#       scheme: scheme,
+#       signId: ENV['SIGNING_IDENTITY_ADHOC']
+#     )
+#
+#     environment = scheme.upcase
+#
+#     # Set version number to the one at the top of the CHANGELOG
+#     readme = File.read("../docs/CHANGELOG.md")
+#     latest_version = readme.split("\n## ").first
+#     first_line = latest_version.split("\n").first
+#     version_number = first_line.split(" ")[1]
+#     # Generate release notes from CHANGELOG
+#     release_notes = latest_version.split("\n")[1..-1].join("\n")
+#     notification(subtitle: "Release Notes", message: release_notes)
+#
+#     crashlytics(
+#       ipa_path: "../Carnival.ipa",
+#       api_token: "b8127086af392cb1b73dc00a7387bb7a0856138f",
+#       build_secret: "47c407d9fb90f3350023f2dac10c37722a9caf3ae98396a16b0b41715177000a",
+#       notes: "#{scheme} build. Release notes: #{release_notes}",
+#       # groups: ['Carnival-Test']
+#     )
+#
+#     # post_to_slack(scheme: scheme, destination: "Crashlytics")
+#   end
+#
+# #------------------------- Crashlytics -------------------------#
+#
+#   private_lane :fabric do |options|
+#     notification(subtitle: "Dev build", message: "Building...")
+#     scheme = options[:scheme]
+#
+#     sigh(
+#       skip_install: true,
+#       development: true
+#     )
+#
+#     build(
+#       scheme: scheme,
+#       signId: ENV['SIGNING_IDENTITY_DEV']
+#     )
+#
+#     environment = scheme.upcase
+#
+#     crashlytics(
+#       ipa_path: "./Carnival.ipa",
+#       notes: "Running on #{environment} #{scheme}",
+#       # groups: ['Carnival-Test']
+#     )
+#
+#     # post_to_slack(scheme: scheme, destination: "Crashlytics")
+#   end
+#
+#
+# #--------------------------- Beta Builds -----------------------#
+#   private_lane :beta do |options|
+#       scheme = options[:scheme]
+#       #Download the provisioning profile for the app
+#       sigh(skip_install: true, development: true)
+#
+#       build(scheme: scheme, signId: ENV['SIGNING_IDENTITY_DEV'])
+#
+#       # Set version number to the one at the top of the CHANGELOG
+#       readme = File.read("../docs/CHANGELOG.md")
+#       latest_version = readme.split("\n## ").first
+#       first_line = latest_version.split("\n").first
+#       version_number = first_line.split(" ")[1]
+#       # Generate release notes from CHANGELOG
+#       release_notes = latest_version.split("\n")[1..-1].join("\n")
+#
+#       crashlytics(
+#         ipa_path: "../Carnival.ipa",
+#         api_token: "b8127086af392cb1b73dc00a7387bb7a0856138f",
+#         build_secret: "47c407d9fb90f3350023f2dac10c37722a9caf3ae98396a16b0b41715177000a",
+#         notes: "#{scheme} build. Release notes: #{release_notes}",
+#         # groups: ['Carnival-Test']
+#       )
+#
+#       # post_to_slack(scheme: scheme, destination: "Crashlytics")
+#
+#   end
+#
+# #--------------------------- App Store -------------------------#
+#
+#   private_lane :itc do |options|
+#     scheme = options[:scheme]
+#
+#     # Make sure we start off with a clean slate
+#     ensure_git_status_clean
+#
+#     sigh(
+#       skip_install: true,
+#       development: false,
+#     )
+#
+#     build(
+#       scheme: scheme,
+#       signId: ENV['SIGNING_IDENTITY_PROD']
+#     )
+#
+#     pilot(
+#       ipa: "../Carnival.ipa",
+#       skip_submission: true,
+#     )
+#
+#     # post_to_slack(scheme: scheme, destination: "TestFlight")
+#
+#   end
+#
+# ############################# UTIL ##############################
+#
+#   private_lane :build do |options|
+#     scheme = options[:scheme]
+#     signingId = options[:signId]
+#
+#     #Version bump
+#     increment_build_number
+#
+#     cocoapods
+#     # update_project_codesigning(path: "Carnival.xcodeproj",use_automatic_signing: false)
+#     gym(
+#       scheme: "#{scheme}",
+#       configuration: scheme,
+#       clean: true,
+#       include_bitcode: false,
+#       workspace: "Carnival.xcworkspace",
+#       output_directory: "../",
+#       output_name: "Carnival.ipa",
+#       codesigning_identity: "iPhone Distribution: Phunware, Inc.",
+#       xcargs: "ARCHIVE=YES" # Used to tell the Fabric run script to upload dSYM file
+#     )
+#     # update_project_codesigning(path: "Carnival.xcodeproj",use_automatic_signing: true)
+#     # post_to_slack(scheme: scheme, destination: "Crashlytics", signingId: signingId)
+#   end
+#
+#   private_lane :post_to_slack do |options|
+#     scheme      = options[:scheme]
+#     version     = get_version_number(xcodeproj: "Carnival.xcodeproj")
+#     build       = get_build_number(xcodeproj: "Carnival.xcodeproj")
+#     environment = scheme.upcase
+#     # api         = File.read("../Carnival/Constants/environment_constants.h").scan(/\d\.*/).join
+#     destination = options[:destination]
+#     signingId   = options[:signingId]
+#
+#     slack(
+#       message: "<!here|here>: New :ios: *#{version}* (#{build}) running `#{environment}` - `#{signingId}` has been submitted to *#{destination}*  :rocket:",
+#     )
+#
+#   end
+#
+#   def read_file
+#     file = File.open("../docs/CHANGELOG.md")
+#   end
+#
+# ############################# POST ##############################
+#
+# # This lane is called, only if the executed lane was successful
+#   after_all do |lane|
+#
+#     # File.delete("../../Carnival.ipa")
+#     # File.delete("../../Carnival.app.dSYM.zip")
+#
+#     # Make sure our directory is clean, except for changes Fastlane has made
+#     clean_build_artifacts
+#     notification(title: "Success", message:"Successfully deployed new #{lane} build (#{Actions.lane_context[SharedValues::BUILD_NUMBER]}).") # Mac OS X Notification
+#   end
+#
+#   error do |lane, exception|
+#     # sh "./scripts/add_pods.sh"
+#     # cocoapods
+#     notification(title: "Error", message: "Fastlane '#{lane}' errored")
+#   end
+#
+# end

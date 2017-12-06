@@ -1,0 +1,939 @@
+BCSymbolMap Version: 2.0
+Apple LLVM version 9.0.0 (clang-900.0.38)
+/Users/Gabe/Desktop/Carnival/Pods/Target Support Files/TMCache/TMCache-dummy.m
+/Users/Gabe/Desktop/Carnival/Pods
+-[TMCache dealloc]
+-[TMCache initWithName:]
+-[TMCache initWithName:rootPath:]
+-[TMCache description]
++[TMCache sharedCache]
+___22+[TMCache sharedCache]_block_invoke
+___copy_helper_block_
+___destroy_helper_block_
+-[TMCache objectForKey:block:]
+___30-[TMCache objectForKey:block:]_block_invoke
+___30-[TMCache objectForKey:block:]_block_invoke_2
+___30-[TMCache objectForKey:block:]_block_invoke_3
+___30-[TMCache objectForKey:block:]_block_invoke_4
+___copy_helper_block_.30
+___destroy_helper_block_.31
+___30-[TMCache objectForKey:block:]_block_invoke.33
+___30-[TMCache objectForKey:block:]_block_invoke_2.36
+___copy_helper_block_.37
+___destroy_helper_block_.38
+___copy_helper_block_.40
+___destroy_helper_block_.41
+___copy_helper_block_.45
+___destroy_helper_block_.46
+___copy_helper_block_.49
+___destroy_helper_block_.50
+-[TMCache setObject:forKey:block:]
+___34-[TMCache setObject:forKey:block:]_block_invoke
+___34-[TMCache setObject:forKey:block:]_block_invoke_2
+___34-[TMCache setObject:forKey:block:]_block_invoke_3
+___copy_helper_block_.56
+___destroy_helper_block_.57
+-[TMCache removeObjectForKey:block:]
+___36-[TMCache removeObjectForKey:block:]_block_invoke
+___36-[TMCache removeObjectForKey:block:]_block_invoke_2
+___36-[TMCache removeObjectForKey:block:]_block_invoke_3
+___copy_helper_block_.65
+___destroy_helper_block_.66
+-[TMCache removeAllObjects:]
+___28-[TMCache removeAllObjects:]_block_invoke
+___28-[TMCache removeAllObjects:]_block_invoke_2
+___28-[TMCache removeAllObjects:]_block_invoke_3
+___copy_helper_block_.76
+___destroy_helper_block_.77
+-[TMCache trimToDate:block:]
+___28-[TMCache trimToDate:block:]_block_invoke
+___28-[TMCache trimToDate:block:]_block_invoke_2
+___28-[TMCache trimToDate:block:]_block_invoke_3
+___copy_helper_block_.85
+___destroy_helper_block_.86
+-[TMCache diskByteCount]
+___24-[TMCache diskByteCount]_block_invoke
+___copy_helper_block_.94
+___destroy_helper_block_.95
+-[TMCache objectForKey:]
+___Block_byref_object_copy_
+___Block_byref_object_dispose_
+___24-[TMCache objectForKey:]_block_invoke
+___copy_helper_block_.97
+___destroy_helper_block_.98
+-[TMCache setObject:forKey:]
+___28-[TMCache setObject:forKey:]_block_invoke
+-[TMCache removeObjectForKey:]
+___30-[TMCache removeObjectForKey:]_block_invoke
+-[TMCache trimToDate:]
+___22-[TMCache trimToDate:]_block_invoke
+-[TMCache removeAllObjects]
+___27-[TMCache removeAllObjects]_block_invoke
+-[TMCache name]
+-[TMCache queue]
+-[TMCache setQueue:]
+-[TMCache diskCache]
+-[TMCache memoryCache]
+-[TMCache .cxx_destruct]
+_OBJC_IVAR_$_TMCache._queue
+_OBJC_IVAR_$_TMCache._name
+_OBJC_IVAR_$_TMCache._diskCache
+_OBJC_IVAR_$_TMCache._memoryCache
+_sharedCache.cache
+_sharedCache.predicate
+___block_descriptor_tmp
+___block_descriptor_tmp.27
+___block_literal_global
+___block_descriptor_tmp.32
+___block_descriptor_tmp.39
+___block_descriptor_tmp.42
+___block_descriptor_tmp.48
+___block_descriptor_tmp.51
+___block_descriptor_tmp.53
+___block_descriptor_tmp.55
+___block_descriptor_tmp.58
+___block_descriptor_tmp.60
+___block_descriptor_tmp.62
+___block_descriptor_tmp.67
+___block_descriptor_tmp.70
+___block_descriptor_tmp.73
+___block_descriptor_tmp.78
+___block_descriptor_tmp.80
+___block_descriptor_tmp.82
+___block_descriptor_tmp.87
+___block_descriptor_tmp.96
+___block_descriptor_tmp.100
+___block_descriptor_tmp.102
+___block_descriptor_tmp.104
+___block_descriptor_tmp.107
+___block_descriptor_tmp.109
+/Users/Gabe/Desktop/Carnival/Pods/TMCache/TMCache/TMCache.m
+/Users/Gabe/Desktop/Carnival/Pods/TMCache/TMCache/TMCache.h
+__27-[TMCache removeAllObjects]_block_invoke
+__22-[TMCache trimToDate:]_block_invoke
+__30-[TMCache removeObjectForKey:]_block_invoke
+__28-[TMCache setObject:forKey:]_block_invoke
+__destroy_helper_block_
+__copy_helper_block_
+__24-[TMCache objectForKey:]_block_invoke
+__Block_byref_object_dispose_
+__Block_byref_object_copy_
+__24-[TMCache diskByteCount]_block_invoke
+__28-[TMCache trimToDate:block:]_block_invoke_3
+__28-[TMCache trimToDate:block:]_block_invoke_2
+__28-[TMCache trimToDate:block:]_block_invoke
+__28-[TMCache removeAllObjects:]_block_invoke_3
+__28-[TMCache removeAllObjects:]_block_invoke_2
+__28-[TMCache removeAllObjects:]_block_invoke
+__36-[TMCache removeObjectForKey:block:]_block_invoke_3
+__36-[TMCache removeObjectForKey:block:]_block_invoke_2
+__36-[TMCache removeObjectForKey:block:]_block_invoke
+__34-[TMCache setObject:forKey:block:]_block_invoke_3
+__34-[TMCache setObject:forKey:block:]_block_invoke_2
+__34-[TMCache setObject:forKey:block:]_block_invoke
+__30-[TMCache objectForKey:block:]_block_invoke_2.36
+__30-[TMCache objectForKey:block:]_block_invoke.33
+__30-[TMCache objectForKey:block:]_block_invoke_4
+__30-[TMCache objectForKey:block:]_block_invoke_3
+__30-[TMCache objectForKey:block:]_block_invoke_2
+__30-[TMCache objectForKey:block:]_block_invoke
+__22+[TMCache sharedCache]_block_invoke
+_dispatch_once
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/usr/include/dispatch/once.h
+-[TMDiskCache initWithName:]
+-[TMDiskCache initWithName:rootPath:]
+___37-[TMDiskCache initWithName:rootPath:]_block_invoke
+-[TMDiskCache description]
++[TMDiskCache sharedCache]
+___26+[TMDiskCache sharedCache]_block_invoke
+___copy_helper_block_.34
+___destroy_helper_block_.35
++[TMDiskCache sharedQueue]
+___26+[TMDiskCache sharedQueue]_block_invoke
+-[TMDiskCache encodedFileURLForKey:]
+-[TMDiskCache keyForEncodedFileURL:]
+-[TMDiskCache encodedString:]
+-[TMDiskCache decodedString:]
++[TMDiskCache sharedTrashQueue]
+___31+[TMDiskCache sharedTrashQueue]_block_invoke
++[TMDiskCache sharedTrashURL]
+___29+[TMDiskCache sharedTrashURL]_block_invoke
++[TMDiskCache moveItemAtURLToTrash:]
++[TMDiskCache emptyTrash]
+___25+[TMDiskCache emptyTrash]_block_invoke
+___copy_helper_block_.101
+___destroy_helper_block_.102
+-[TMDiskCache createCacheDirectory]
+-[TMDiskCache initializeDiskProperties]
+-[TMDiskCache setFileModificationDate:forURL:]
+-[TMDiskCache removeFileAndExecuteBlocksForKey:]
+-[TMDiskCache trimDiskToSize:]
+-[TMDiskCache trimDiskToSizeByDate:]
+-[TMDiskCache trimDiskToDate:]
+-[TMDiskCache trimToAgeLimitRecursively]
+___40-[TMDiskCache trimToAgeLimitRecursively]_block_invoke
+___copy_helper_block_.145
+___destroy_helper_block_.146
+-[TMDiskCache objectForKey:block:]
+___34-[TMDiskCache objectForKey:block:]_block_invoke
+___copy_helper_block_.155
+___destroy_helper_block_.156
+-[TMDiskCache fileURLForKey:block:]
+___35-[TMDiskCache fileURLForKey:block:]_block_invoke
+___copy_helper_block_.158
+___destroy_helper_block_.159
+-[TMDiskCache setObject:forKey:block:]
+___38-[TMDiskCache setObject:forKey:block:]_block_invoke
+___copy_helper_block_.171
+___destroy_helper_block_.172
+-[TMDiskCache removeObjectForKey:block:]
+___40-[TMDiskCache removeObjectForKey:block:]_block_invoke
+___copy_helper_block_.174
+___destroy_helper_block_.175
+-[TMDiskCache trimToSize:block:]
+___32-[TMDiskCache trimToSize:block:]_block_invoke
+___copy_helper_block_.181
+___destroy_helper_block_.182
+-[TMDiskCache trimToDate:block:]
+___32-[TMDiskCache trimToDate:block:]_block_invoke
+___copy_helper_block_.188
+___destroy_helper_block_.189
+-[TMDiskCache trimToSizeByDate:block:]
+___38-[TMDiskCache trimToSizeByDate:block:]_block_invoke
+___copy_helper_block_.193
+___destroy_helper_block_.194
+-[TMDiskCache removeAllObjects:]
+___32-[TMDiskCache removeAllObjects:]_block_invoke
+___copy_helper_block_.198
+___destroy_helper_block_.199
+-[TMDiskCache enumerateObjectsWithBlock:completionBlock:]
+___57-[TMDiskCache enumerateObjectsWithBlock:completionBlock:]_block_invoke
+___copy_helper_block_.201
+___destroy_helper_block_.202
+-[TMDiskCache objectForKey:]
+___28-[TMDiskCache objectForKey:]_block_invoke
+___copy_helper_block_.204
+___destroy_helper_block_.205
+-[TMDiskCache fileURLForKey:]
+___29-[TMDiskCache fileURLForKey:]_block_invoke
+___copy_helper_block_.210
+___destroy_helper_block_.211
+-[TMDiskCache setObject:forKey:]
+___32-[TMDiskCache setObject:forKey:]_block_invoke
+-[TMDiskCache removeObjectForKey:]
+___34-[TMDiskCache removeObjectForKey:]_block_invoke
+-[TMDiskCache trimToSize:]
+___26-[TMDiskCache trimToSize:]_block_invoke
+-[TMDiskCache trimToDate:]
+___26-[TMDiskCache trimToDate:]_block_invoke
+-[TMDiskCache trimToSizeByDate:]
+___32-[TMDiskCache trimToSizeByDate:]_block_invoke
+-[TMDiskCache removeAllObjects]
+___31-[TMDiskCache removeAllObjects]_block_invoke
+-[TMDiskCache enumerateObjectsWithBlock:]
+___41-[TMDiskCache enumerateObjectsWithBlock:]_block_invoke
+-[TMDiskCache willAddObjectBlock]
+___Block_byref_object_copy_.240
+___Block_byref_object_dispose_.241
+___33-[TMDiskCache willAddObjectBlock]_block_invoke
+___copy_helper_block_.242
+___destroy_helper_block_.243
+-[TMDiskCache setWillAddObjectBlock:]
+___37-[TMDiskCache setWillAddObjectBlock:]_block_invoke
+___copy_helper_block_.245
+___destroy_helper_block_.246
+-[TMDiskCache willRemoveObjectBlock]
+___36-[TMDiskCache willRemoveObjectBlock]_block_invoke
+___copy_helper_block_.248
+___destroy_helper_block_.249
+-[TMDiskCache setWillRemoveObjectBlock:]
+___40-[TMDiskCache setWillRemoveObjectBlock:]_block_invoke
+___copy_helper_block_.251
+___destroy_helper_block_.252
+-[TMDiskCache willRemoveAllObjectsBlock]
+___40-[TMDiskCache willRemoveAllObjectsBlock]_block_invoke
+___copy_helper_block_.254
+___destroy_helper_block_.255
+-[TMDiskCache setWillRemoveAllObjectsBlock:]
+___44-[TMDiskCache setWillRemoveAllObjectsBlock:]_block_invoke
+___copy_helper_block_.257
+___destroy_helper_block_.258
+-[TMDiskCache didAddObjectBlock]
+___32-[TMDiskCache didAddObjectBlock]_block_invoke
+___copy_helper_block_.260
+___destroy_helper_block_.261
+-[TMDiskCache setDidAddObjectBlock:]
+___36-[TMDiskCache setDidAddObjectBlock:]_block_invoke
+___copy_helper_block_.263
+___destroy_helper_block_.264
+-[TMDiskCache didRemoveObjectBlock]
+___35-[TMDiskCache didRemoveObjectBlock]_block_invoke
+___copy_helper_block_.266
+___destroy_helper_block_.267
+-[TMDiskCache setDidRemoveObjectBlock:]
+___39-[TMDiskCache setDidRemoveObjectBlock:]_block_invoke
+___copy_helper_block_.269
+___destroy_helper_block_.270
+-[TMDiskCache didRemoveAllObjectsBlock]
+___39-[TMDiskCache didRemoveAllObjectsBlock]_block_invoke
+___copy_helper_block_.272
+___destroy_helper_block_.273
+-[TMDiskCache setDidRemoveAllObjectsBlock:]
+___43-[TMDiskCache setDidRemoveAllObjectsBlock:]_block_invoke
+___copy_helper_block_.275
+___destroy_helper_block_.276
+-[TMDiskCache byteLimit]
+___24-[TMDiskCache byteLimit]_block_invoke
+___copy_helper_block_.278
+___destroy_helper_block_.279
+-[TMDiskCache setByteLimit:]
+___28-[TMDiskCache setByteLimit:]_block_invoke
+___copy_helper_block_.281
+___destroy_helper_block_.282
+-[TMDiskCache ageLimit]
+___23-[TMDiskCache ageLimit]_block_invoke
+___copy_helper_block_.284
+___destroy_helper_block_.285
+-[TMDiskCache setAgeLimit:]
+___27-[TMDiskCache setAgeLimit:]_block_invoke
+___copy_helper_block_.287
+___destroy_helper_block_.288
++[TMDiskCache setBackgroundTaskManager:]
+-[TMDiskCache name]
+-[TMDiskCache cacheURL]
+-[TMDiskCache setCacheURL:]
+-[TMDiskCache byteCount]
+-[TMDiskCache setByteCount:]
+-[TMDiskCache queue]
+-[TMDiskCache setQueue:]
+-[TMDiskCache dates]
+-[TMDiskCache setDates:]
+-[TMDiskCache sizes]
+-[TMDiskCache setSizes:]
+-[TMDiskCache .cxx_destruct]
+_OBJC_IVAR_$_TMDiskCache._name
+_OBJC_IVAR_$_TMDiskCache._queue
+_OBJC_IVAR_$_TMDiskCache._willAddObjectBlock
+_OBJC_IVAR_$_TMDiskCache._willRemoveObjectBlock
+_OBJC_IVAR_$_TMDiskCache._willRemoveAllObjectsBlock
+_OBJC_IVAR_$_TMDiskCache._didAddObjectBlock
+_OBJC_IVAR_$_TMDiskCache._didRemoveObjectBlock
+_OBJC_IVAR_$_TMDiskCache._didRemoveAllObjectsBlock
+_OBJC_IVAR_$_TMDiskCache._byteCount
+_OBJC_IVAR_$_TMDiskCache._byteLimit
+_OBJC_IVAR_$_TMDiskCache._ageLimit
+_OBJC_IVAR_$_TMDiskCache._dates
+_OBJC_IVAR_$_TMDiskCache._sizes
+_OBJC_IVAR_$_TMDiskCache._cacheURL
+___block_descriptor_tmp.36
+_sharedQueue.queue
+_sharedQueue.predicate
+_sharedTrashQueue.trashQueue
+_sharedTrashQueue.predicate
+___block_descriptor_tmp.56
+___block_literal_global.57
+_sharedTrashURL.sharedTrashURL
+_sharedTrashURL.predicate
+___block_literal_global.79
+_TMCacheBackgroundTaskManager
+___block_descriptor_tmp.147
+___block_descriptor_tmp.157
+___block_descriptor_tmp.160
+___block_descriptor_tmp.173
+___block_descriptor_tmp.176
+___block_descriptor_tmp.183
+___block_descriptor_tmp.190
+___block_descriptor_tmp.195
+___block_descriptor_tmp.200
+___block_descriptor_tmp.203
+___block_descriptor_tmp.207
+___block_descriptor_tmp.212
+___block_descriptor_tmp.216
+___block_descriptor_tmp.220
+___block_descriptor_tmp.225
+___block_descriptor_tmp.229
+___block_descriptor_tmp.233
+___block_descriptor_tmp.235
+___block_descriptor_tmp.237
+___block_descriptor_tmp.244
+___block_descriptor_tmp.247
+___block_descriptor_tmp.250
+___block_descriptor_tmp.253
+___block_descriptor_tmp.256
+___block_descriptor_tmp.259
+___block_descriptor_tmp.262
+___block_descriptor_tmp.265
+___block_descriptor_tmp.268
+___block_descriptor_tmp.271
+___block_descriptor_tmp.274
+___block_descriptor_tmp.277
+___block_descriptor_tmp.280
+___block_descriptor_tmp.283
+___block_descriptor_tmp.286
+___block_descriptor_tmp.289
+/Users/Gabe/Desktop/Carnival/Pods/TMCache/TMCache/TMDiskCache.m
+/Users/Gabe/Desktop/Carnival/Pods/TMCache/TMCache/TMDiskCache.h
+__27-[TMDiskCache setAgeLimit:]_block_invoke
+__23-[TMDiskCache ageLimit]_block_invoke
+__28-[TMDiskCache setByteLimit:]_block_invoke
+__24-[TMDiskCache byteLimit]_block_invoke
+__43-[TMDiskCache setDidRemoveAllObjectsBlock:]_block_invoke
+__39-[TMDiskCache didRemoveAllObjectsBlock]_block_invoke
+__39-[TMDiskCache setDidRemoveObjectBlock:]_block_invoke
+__35-[TMDiskCache didRemoveObjectBlock]_block_invoke
+__36-[TMDiskCache setDidAddObjectBlock:]_block_invoke
+__32-[TMDiskCache didAddObjectBlock]_block_invoke
+__44-[TMDiskCache setWillRemoveAllObjectsBlock:]_block_invoke
+__40-[TMDiskCache willRemoveAllObjectsBlock]_block_invoke
+__40-[TMDiskCache setWillRemoveObjectBlock:]_block_invoke
+__36-[TMDiskCache willRemoveObjectBlock]_block_invoke
+__37-[TMDiskCache setWillAddObjectBlock:]_block_invoke
+__33-[TMDiskCache willAddObjectBlock]_block_invoke
+__41-[TMDiskCache enumerateObjectsWithBlock:]_block_invoke
+__31-[TMDiskCache removeAllObjects]_block_invoke
+__32-[TMDiskCache trimToSizeByDate:]_block_invoke
+__26-[TMDiskCache trimToDate:]_block_invoke
+__26-[TMDiskCache trimToSize:]_block_invoke
+__34-[TMDiskCache removeObjectForKey:]_block_invoke
+__32-[TMDiskCache setObject:forKey:]_block_invoke
+__29-[TMDiskCache fileURLForKey:]_block_invoke
+__28-[TMDiskCache objectForKey:]_block_invoke
+__57-[TMDiskCache enumerateObjectsWithBlock:completionBlock:]_block_invoke
+__32-[TMDiskCache removeAllObjects:]_block_invoke
+__38-[TMDiskCache trimToSizeByDate:block:]_block_invoke
+__32-[TMDiskCache trimToDate:block:]_block_invoke
+__32-[TMDiskCache trimToSize:block:]_block_invoke
+__40-[TMDiskCache removeObjectForKey:block:]_block_invoke
+__38-[TMDiskCache setObject:forKey:block:]_block_invoke
+__35-[TMDiskCache fileURLForKey:block:]_block_invoke
+__34-[TMDiskCache objectForKey:block:]_block_invoke
+__40-[TMDiskCache trimToAgeLimitRecursively]_block_invoke
+__25+[TMDiskCache emptyTrash]_block_invoke
+__29+[TMDiskCache sharedTrashURL]_block_invoke
+__31+[TMDiskCache sharedTrashQueue]_block_invoke
+__26+[TMDiskCache sharedQueue]_block_invoke
+__26+[TMDiskCache sharedCache]_block_invoke
+__37-[TMDiskCache initWithName:rootPath:]_block_invoke
+-[TMMemoryCache dealloc]
+-[TMMemoryCache init]
++[TMMemoryCache sharedCache]
+___28+[TMMemoryCache sharedCache]_block_invoke
+-[TMMemoryCache handleMemoryWarning]
+___36-[TMMemoryCache handleMemoryWarning]_block_invoke
+___copy_helper_block_.28
+___destroy_helper_block_.29
+-[TMMemoryCache handleApplicationBackgrounding]
+___47-[TMMemoryCache handleApplicationBackgrounding]_block_invoke
+___copy_helper_block_.33
+___destroy_helper_block_.34
+-[TMMemoryCache removeObjectAndExecuteBlocksForKey:]
+-[TMMemoryCache trimMemoryToDate:]
+-[TMMemoryCache trimToCostLimit:]
+-[TMMemoryCache trimToCostLimitByDate:]
+-[TMMemoryCache trimToAgeLimitRecursively]
+___42-[TMMemoryCache trimToAgeLimitRecursively]_block_invoke
+___42-[TMMemoryCache trimToAgeLimitRecursively]_block_invoke_2
+___copy_helper_block_.59
+___destroy_helper_block_.60
+___copy_helper_block_.62
+___destroy_helper_block_.63
+-[TMMemoryCache objectForKey:block:]
+___36-[TMMemoryCache objectForKey:block:]_block_invoke
+___36-[TMMemoryCache objectForKey:block:]_block_invoke_2
+___copy_helper_block_.67
+___destroy_helper_block_.68
+___copy_helper_block_.70
+___destroy_helper_block_.71
+-[TMMemoryCache setObject:forKey:block:]
+-[TMMemoryCache setObject:forKey:withCost:block:]
+___49-[TMMemoryCache setObject:forKey:withCost:block:]_block_invoke
+___49-[TMMemoryCache setObject:forKey:withCost:block:]_block_invoke_2
+___copy_helper_block_.80
+___destroy_helper_block_.81
+___copy_helper_block_.83
+___destroy_helper_block_.84
+-[TMMemoryCache removeObjectForKey:block:]
+___42-[TMMemoryCache removeObjectForKey:block:]_block_invoke
+___42-[TMMemoryCache removeObjectForKey:block:]_block_invoke_2
+___copy_helper_block_.86
+___destroy_helper_block_.87
+___copy_helper_block_.89
+___destroy_helper_block_.90
+-[TMMemoryCache trimToDate:block:]
+___34-[TMMemoryCache trimToDate:block:]_block_invoke
+___34-[TMMemoryCache trimToDate:block:]_block_invoke_2
+___copy_helper_block_.96
+___destroy_helper_block_.97
+___copy_helper_block_.99
+___destroy_helper_block_.100
+-[TMMemoryCache trimToCost:block:]
+___34-[TMMemoryCache trimToCost:block:]_block_invoke
+___34-[TMMemoryCache trimToCost:block:]_block_invoke_2
+___copy_helper_block_.104
+___destroy_helper_block_.105
+___copy_helper_block_.107
+___destroy_helper_block_.108
+-[TMMemoryCache trimToCostByDate:block:]
+___40-[TMMemoryCache trimToCostByDate:block:]_block_invoke
+___40-[TMMemoryCache trimToCostByDate:block:]_block_invoke_2
+___copy_helper_block_.112
+___destroy_helper_block_.113
+___copy_helper_block_.115
+___destroy_helper_block_.116
+-[TMMemoryCache removeAllObjects:]
+___34-[TMMemoryCache removeAllObjects:]_block_invoke
+___34-[TMMemoryCache removeAllObjects:]_block_invoke_2
+___copy_helper_block_.120
+___destroy_helper_block_.121
+___copy_helper_block_.123
+___destroy_helper_block_.124
+-[TMMemoryCache enumerateObjectsWithBlock:completionBlock:]
+___59-[TMMemoryCache enumerateObjectsWithBlock:completionBlock:]_block_invoke
+___59-[TMMemoryCache enumerateObjectsWithBlock:completionBlock:]_block_invoke_2
+___copy_helper_block_.126
+___destroy_helper_block_.127
+___copy_helper_block_.129
+___destroy_helper_block_.130
+-[TMMemoryCache objectForKey:]
+___30-[TMMemoryCache objectForKey:]_block_invoke
+___copy_helper_block_.132
+___destroy_helper_block_.133
+-[TMMemoryCache setObject:forKey:]
+-[TMMemoryCache setObject:forKey:withCost:]
+___43-[TMMemoryCache setObject:forKey:withCost:]_block_invoke
+-[TMMemoryCache removeObjectForKey:]
+___36-[TMMemoryCache removeObjectForKey:]_block_invoke
+-[TMMemoryCache trimToDate:]
+___28-[TMMemoryCache trimToDate:]_block_invoke
+-[TMMemoryCache trimToCost:]
+___28-[TMMemoryCache trimToCost:]_block_invoke
+-[TMMemoryCache trimToCostByDate:]
+___34-[TMMemoryCache trimToCostByDate:]_block_invoke
+-[TMMemoryCache removeAllObjects]
+___33-[TMMemoryCache removeAllObjects]_block_invoke
+-[TMMemoryCache enumerateObjectsWithBlock:]
+___43-[TMMemoryCache enumerateObjectsWithBlock:]_block_invoke
+-[TMMemoryCache willAddObjectBlock]
+___Block_byref_object_copy_.163
+___Block_byref_object_dispose_.164
+___35-[TMMemoryCache willAddObjectBlock]_block_invoke
+___copy_helper_block_.165
+___destroy_helper_block_.166
+-[TMMemoryCache setWillAddObjectBlock:]
+___39-[TMMemoryCache setWillAddObjectBlock:]_block_invoke
+___copy_helper_block_.170
+___destroy_helper_block_.171
+-[TMMemoryCache willRemoveObjectBlock]
+___38-[TMMemoryCache willRemoveObjectBlock]_block_invoke
+___copy_helper_block_.173
+___destroy_helper_block_.174
+-[TMMemoryCache setWillRemoveObjectBlock:]
+___42-[TMMemoryCache setWillRemoveObjectBlock:]_block_invoke
+___copy_helper_block_.176
+___destroy_helper_block_.177
+-[TMMemoryCache willRemoveAllObjectsBlock]
+___42-[TMMemoryCache willRemoveAllObjectsBlock]_block_invoke
+___copy_helper_block_.179
+___destroy_helper_block_.180
+-[TMMemoryCache setWillRemoveAllObjectsBlock:]
+___46-[TMMemoryCache setWillRemoveAllObjectsBlock:]_block_invoke
+___copy_helper_block_.182
+___destroy_helper_block_.183
+-[TMMemoryCache didAddObjectBlock]
+___34-[TMMemoryCache didAddObjectBlock]_block_invoke
+___copy_helper_block_.185
+___destroy_helper_block_.186
+-[TMMemoryCache setDidAddObjectBlock:]
+___38-[TMMemoryCache setDidAddObjectBlock:]_block_invoke
+-[TMMemoryCache didRemoveObjectBlock]
+___37-[TMMemoryCache didRemoveObjectBlock]_block_invoke
+___copy_helper_block_.191
+___destroy_helper_block_.192
+-[TMMemoryCache setDidRemoveObjectBlock:]
+___41-[TMMemoryCache setDidRemoveObjectBlock:]_block_invoke
+___copy_helper_block_.194
+___destroy_helper_block_.195
+-[TMMemoryCache didRemoveAllObjectsBlock]
+___41-[TMMemoryCache didRemoveAllObjectsBlock]_block_invoke
+___copy_helper_block_.197
+___destroy_helper_block_.198
+-[TMMemoryCache setDidRemoveAllObjectsBlock:]
+___45-[TMMemoryCache setDidRemoveAllObjectsBlock:]_block_invoke
+___copy_helper_block_.200
+___destroy_helper_block_.201
+-[TMMemoryCache didReceiveMemoryWarningBlock]
+___45-[TMMemoryCache didReceiveMemoryWarningBlock]_block_invoke
+___copy_helper_block_.203
+___destroy_helper_block_.204
+-[TMMemoryCache setDidReceiveMemoryWarningBlock:]
+___49-[TMMemoryCache setDidReceiveMemoryWarningBlock:]_block_invoke
+___copy_helper_block_.206
+___destroy_helper_block_.207
+-[TMMemoryCache didEnterBackgroundBlock]
+___40-[TMMemoryCache didEnterBackgroundBlock]_block_invoke
+___copy_helper_block_.209
+___destroy_helper_block_.210
+-[TMMemoryCache setDidEnterBackgroundBlock:]
+___44-[TMMemoryCache setDidEnterBackgroundBlock:]_block_invoke
+___copy_helper_block_.212
+___destroy_helper_block_.213
+-[TMMemoryCache ageLimit]
+___25-[TMMemoryCache ageLimit]_block_invoke
+___copy_helper_block_.215
+___destroy_helper_block_.216
+-[TMMemoryCache setAgeLimit:]
+___29-[TMMemoryCache setAgeLimit:]_block_invoke
+___copy_helper_block_.218
+___destroy_helper_block_.219
+-[TMMemoryCache costLimit]
+___26-[TMMemoryCache costLimit]_block_invoke
+___copy_helper_block_.221
+___destroy_helper_block_.222
+-[TMMemoryCache setCostLimit:]
+___30-[TMMemoryCache setCostLimit:]_block_invoke
+___copy_helper_block_.224
+___destroy_helper_block_.225
+-[TMMemoryCache totalCost]
+___26-[TMMemoryCache totalCost]_block_invoke
+___copy_helper_block_.227
+___destroy_helper_block_.228
+-[TMMemoryCache queue]
+-[TMMemoryCache setQueue:]
+-[TMMemoryCache removeAllObjectsOnMemoryWarning]
+-[TMMemoryCache setRemoveAllObjectsOnMemoryWarning:]
+-[TMMemoryCache removeAllObjectsOnEnteringBackground]
+-[TMMemoryCache setRemoveAllObjectsOnEnteringBackground:]
+-[TMMemoryCache dictionary]
+-[TMMemoryCache setDictionary:]
+-[TMMemoryCache dates]
+-[TMMemoryCache setDates:]
+-[TMMemoryCache costs]
+-[TMMemoryCache setCosts:]
+-[TMMemoryCache .cxx_destruct]
+_OBJC_IVAR_$_TMMemoryCache._queue
+_OBJC_IVAR_$_TMMemoryCache._dictionary
+_OBJC_IVAR_$_TMMemoryCache._dates
+_OBJC_IVAR_$_TMMemoryCache._costs
+_OBJC_IVAR_$_TMMemoryCache._willAddObjectBlock
+_OBJC_IVAR_$_TMMemoryCache._willRemoveObjectBlock
+_OBJC_IVAR_$_TMMemoryCache._willRemoveAllObjectsBlock
+_OBJC_IVAR_$_TMMemoryCache._didAddObjectBlock
+_OBJC_IVAR_$_TMMemoryCache._didRemoveObjectBlock
+_OBJC_IVAR_$_TMMemoryCache._didRemoveAllObjectsBlock
+_OBJC_IVAR_$_TMMemoryCache._didReceiveMemoryWarningBlock
+_OBJC_IVAR_$_TMMemoryCache._didEnterBackgroundBlock
+_OBJC_IVAR_$_TMMemoryCache._ageLimit
+_OBJC_IVAR_$_TMMemoryCache._costLimit
+_OBJC_IVAR_$_TMMemoryCache._totalCost
+_OBJC_IVAR_$_TMMemoryCache._removeAllObjectsOnMemoryWarning
+_OBJC_IVAR_$_TMMemoryCache._removeAllObjectsOnEnteringBackground
+___block_descriptor_tmp.30
+___block_descriptor_tmp.35
+___block_descriptor_tmp.61
+___block_descriptor_tmp.64
+___block_descriptor_tmp.69
+___block_descriptor_tmp.72
+___block_descriptor_tmp.85
+___block_descriptor_tmp.88
+___block_descriptor_tmp.91
+___block_descriptor_tmp.98
+___block_descriptor_tmp.101
+___block_descriptor_tmp.106
+___block_descriptor_tmp.114
+___block_descriptor_tmp.117
+___block_descriptor_tmp.122
+___block_descriptor_tmp.125
+___block_descriptor_tmp.128
+___block_descriptor_tmp.131
+___block_descriptor_tmp.135
+___block_descriptor_tmp.141
+___block_descriptor_tmp.143
+___block_descriptor_tmp.148
+___block_descriptor_tmp.152
+___block_descriptor_tmp.156
+___block_descriptor_tmp.158
+___block_descriptor_tmp.167
+___block_descriptor_tmp.172
+___block_descriptor_tmp.175
+___block_descriptor_tmp.178
+___block_descriptor_tmp.181
+___block_descriptor_tmp.184
+___block_descriptor_tmp.187
+___block_descriptor_tmp.193
+___block_descriptor_tmp.196
+___block_descriptor_tmp.199
+___block_descriptor_tmp.202
+___block_descriptor_tmp.205
+___block_descriptor_tmp.208
+___block_descriptor_tmp.211
+___block_descriptor_tmp.214
+___block_descriptor_tmp.217
+___block_descriptor_tmp.223
+___block_descriptor_tmp.226
+/Users/Gabe/Desktop/Carnival/Pods/TMCache/TMCache/TMMemoryCache.m
+/Users/Gabe/Desktop/Carnival/Pods/TMCache/TMCache/TMMemoryCache.h
+__26-[TMMemoryCache totalCost]_block_invoke
+__30-[TMMemoryCache setCostLimit:]_block_invoke
+__26-[TMMemoryCache costLimit]_block_invoke
+__29-[TMMemoryCache setAgeLimit:]_block_invoke
+__25-[TMMemoryCache ageLimit]_block_invoke
+__44-[TMMemoryCache setDidEnterBackgroundBlock:]_block_invoke
+__40-[TMMemoryCache didEnterBackgroundBlock]_block_invoke
+__49-[TMMemoryCache setDidReceiveMemoryWarningBlock:]_block_invoke
+__45-[TMMemoryCache didReceiveMemoryWarningBlock]_block_invoke
+__45-[TMMemoryCache setDidRemoveAllObjectsBlock:]_block_invoke
+__41-[TMMemoryCache didRemoveAllObjectsBlock]_block_invoke
+__41-[TMMemoryCache setDidRemoveObjectBlock:]_block_invoke
+__37-[TMMemoryCache didRemoveObjectBlock]_block_invoke
+__38-[TMMemoryCache setDidAddObjectBlock:]_block_invoke
+__34-[TMMemoryCache didAddObjectBlock]_block_invoke
+__46-[TMMemoryCache setWillRemoveAllObjectsBlock:]_block_invoke
+__42-[TMMemoryCache willRemoveAllObjectsBlock]_block_invoke
+__42-[TMMemoryCache setWillRemoveObjectBlock:]_block_invoke
+__38-[TMMemoryCache willRemoveObjectBlock]_block_invoke
+__39-[TMMemoryCache setWillAddObjectBlock:]_block_invoke
+__35-[TMMemoryCache willAddObjectBlock]_block_invoke
+__43-[TMMemoryCache enumerateObjectsWithBlock:]_block_invoke
+__33-[TMMemoryCache removeAllObjects]_block_invoke
+__34-[TMMemoryCache trimToCostByDate:]_block_invoke
+__28-[TMMemoryCache trimToCost:]_block_invoke
+__28-[TMMemoryCache trimToDate:]_block_invoke
+__36-[TMMemoryCache removeObjectForKey:]_block_invoke
+__43-[TMMemoryCache setObject:forKey:withCost:]_block_invoke
+__30-[TMMemoryCache objectForKey:]_block_invoke
+__59-[TMMemoryCache enumerateObjectsWithBlock:completionBlock:]_block_invoke_2
+__59-[TMMemoryCache enumerateObjectsWithBlock:completionBlock:]_block_invoke
+__34-[TMMemoryCache removeAllObjects:]_block_invoke_2
+__34-[TMMemoryCache removeAllObjects:]_block_invoke
+__40-[TMMemoryCache trimToCostByDate:block:]_block_invoke_2
+__40-[TMMemoryCache trimToCostByDate:block:]_block_invoke
+__34-[TMMemoryCache trimToCost:block:]_block_invoke_2
+__34-[TMMemoryCache trimToCost:block:]_block_invoke
+__34-[TMMemoryCache trimToDate:block:]_block_invoke_2
+__34-[TMMemoryCache trimToDate:block:]_block_invoke
+__42-[TMMemoryCache removeObjectForKey:block:]_block_invoke_2
+__42-[TMMemoryCache removeObjectForKey:block:]_block_invoke
+__49-[TMMemoryCache setObject:forKey:withCost:block:]_block_invoke_2
+__49-[TMMemoryCache setObject:forKey:withCost:block:]_block_invoke
+__36-[TMMemoryCache objectForKey:block:]_block_invoke_2
+__36-[TMMemoryCache objectForKey:block:]_block_invoke
+__42-[TMMemoryCache trimToAgeLimitRecursively]_block_invoke_2
+__42-[TMMemoryCache trimToAgeLimitRecursively]_block_invoke
+__47-[TMMemoryCache handleApplicationBackgrounding]_block_invoke
+__36-[TMMemoryCache handleMemoryWarning]_block_invoke
+__28+[TMMemoryCache sharedCache]_block_invoke
+/Users/Gabe/Library/Developer/Xcode/DerivedData/Carnival-dtrjigvstudrynbsrdnyurczjbvp/Build/Intermediates.noindex/ArchiveIntermediates/Carnival/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/TMCache.build/DerivedSources/TMCache_vers.c
+__ZL15__ARCLite__loadv
+__ZL30add_image_hook_autoreleasepoolPK11mach_headerl
+__ZL34__arclite_objc_autoreleasePoolPushv
+__ZL33__arclite_objc_autoreleasePoolPopPv
+__ZL19patch_lazy_pointersPK11mach_headerP7patch_tm
+__ZL42__arclite_NSArray_objectAtIndexedSubscriptP7NSArrayP13objc_selectorj
+__ZL53__arclite_NSMutableArray_setObject_atIndexedSubscriptP14NSMutableArrayP13objc_selectorP11objc_objectj
+__ZL46__arclite_NSDictionary_objectForKeyedSubscriptP12NSDictionaryP13objc_selectorP11objc_object
+__ZL47__arclite_NSOrderedSet_objectAtIndexedSubscriptP12NSOrderedSetP13objc_selectorj
+__ZL58__arclite_NSMutableOrderedSet_setObject_atIndexedSubscriptP19NSMutableOrderedSetP13objc_selectorP11objc_objectj
+__ZL58__arclite_NSMutableDictionary__setObject_forKeyedSubscriptP19NSMutableDictionaryP13objc_selectorP11objc_objectS4_
+__ZL18add_image_hook_ARCPK11mach_headerl
+__ZL36__arclite_object_setInstanceVariableP11objc_objectPKcPv
+__ZL24__arclite_object_setIvarP11objc_objectP9objc_ivarS0_
+__ZL21__arclite_object_copyP11objc_objectm
+__ZL21__arclite_objc_retainP11objc_object
+__ZL26__arclite_objc_retainBlockP11objc_object
+__ZL22__arclite_objc_releaseP11objc_object
+__ZL26__arclite_objc_autoreleaseP11objc_object
+__ZL32__arclite_objc_retainAutoreleaseP11objc_object
+__ZL37__arclite_objc_autoreleaseReturnValueP11objc_object
+__ZL43__arclite_objc_retainAutoreleaseReturnValueP11objc_object
+__ZL44__arclite_objc_retainAutoreleasedReturnValueP11objc_object
+__ZL26__arclite_objc_storeStrongPP11objc_objectS0_
+__ZL22add_image_hook_swiftV1PK11mach_headerl
+__ZL42__arclite_NSUndoManagerProxy_isKindOfClassP11objc_objectP13objc_selectorP10objc_class
+__ZL13replaceMethodP10objc_classP13objc_selectorPFP11objc_objectS4_S2_zEPS6_
+__ZL30__arclite_NSManagedObject_initP11objc_objectP13objc_selector
+__ZL41__arclite_NSManagedObject_allocWithEntityP11objc_objectP13objc_selectorS0_
+__ZL36__arclite_NSManagedObject_allocBatchP11objc_objectP13objc_selectorPS0_S0_j
+__ZL37__arclite_NSKKMS_fastIndexForKnownKeyP11objc_objectP13objc_selectorS0_
+__ZL28__arclite_NSKKMS_indexForKeyP11objc_objectP13objc_selectorS0_
+__ZL29__arclite_NSKKsD_objectForKeyP11objc_objectP13objc_selectorS0_
+__ZL35__arclite_NSKKsD_removeObjectForKeyP11objc_objectP13objc_selectorS0_
+__ZL33__arclite_NSKKsD_setObject_forKeyP11objc_objectP13objc_selectorS0_S0_
+__ZL41__arclite_NSKKsD_addEntriesFromDictionaryP11objc_objectP13objc_selectorP12NSDictionary
+__ZL28__arclite_objc_readClassPairP10objc_classPK15objc_image_info
+__ZL32__arclite_objc_allocateClassPairP10objc_classPKcm
+__ZL32__arclite_object_getIndexedIvarsP11objc_object
+__ZL23__arclite_objc_getClassPKc
+__ZL27__arclite_objc_getMetaClassPKc
+__ZL31__arclite_objc_getRequiredClassPKc
+__ZL26__arclite_objc_lookUpClassPKc
+__ZL26__arclite_objc_getProtocolPKc
+__ZL23__arclite_class_getNameP10objc_class
+__ZL26__arclite_protocol_getNameP8Protocol
+__ZL37__arclite_objc_copyClassNamesForImagePKcPj
+__ZL17transcribeMethodsP10objc_classP15glue_class_ro_t
+__ZL19transcribeProtocolsP10objc_classP15glue_class_ro_t
+__ZL20transcribePropertiesP10objc_classP15glue_class_ro_t
+__ZL14initialize_impP11objc_objectP13objc_selector
+__ZL18allocateMaybeSwiftP18glue_swift_class_tm
+__ZL22copySwiftV1MangledNamePKcb
+__ZL13demangledNamePKcb
+__ZL16scanMangledFieldRPKcS0_S1_Ri
+__ZL30arclite_uninitialized_functionv
+__ZL12cxxConstructP11objc_object
+__ZL20fixStringForCoreDataP11objc_object
+_OBJC_METACLASS_$___ARCLite__
+__ZL24OBJC_CLASS_$___ARCLite__
+__ZL31OBJC_METACLASS_RO_$___ARCLite__
+__non_lazy_classes
+__ZL27OBJC_CLASS_RO_$___ARCLite__
+__ZL11_class_name
+__ZL32OBJC_$_CLASS_METHODS___ARCLite__
+__ZL17_load_method_name
+__ZL17_load_method_type
+__ZL23NSAutoreleasePool_class
+__ZZL30add_image_hook_autoreleasepoolPK11mach_headerlE7patches
+__ZGVZL30add_image_hook_autoreleasepoolPK11mach_headerlE7patches
+l_OBJC_PROTOCOL_$___ARCLiteIndexedSubscripting__
+l_OBJC_LABEL_PROTOCOL_$___ARCLiteIndexedSubscripting__
+l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteIndexedSubscripting__
+l_OBJC_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_LABEL_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteKeyedSubscripting__
+__ZZL18add_image_hook_ARCPK11mach_headerlE7patches
+__ZGVZL18add_image_hook_ARCPK11mach_headerlE7patches
+__ZL30NSUndoManagerProxy_targetClass
+__ZL29original_NSManagedObject_init
+__ZL40original_NSManagedObject_allocWithEntity
+__ZL35original_NSManagedObject_allocBatch
+__ZL25NSMutableDictionary_class
+__ZL22NSConstantString_class
+__ZL14NSString_class
+__ZL36original_NSKKMS_fastIndexForKnownKey
+__ZL27original_NSKKMS_indexForKey
+__ZL28original_NSKKsD_objectForKey
+__ZL34original_NSKKsD_removeObjectForKey
+__ZL32original_NSKKsD_setObject_forKey
+__ZL40original_NSKKsD_addEntriesFromDictionary
+__ZZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZGVZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZL31original_objc_allocateClassPair
+__ZL31original_object_getIndexedIvars
+__ZL22original_objc_getClass
+__ZL26original_objc_getMetaClass
+__ZL30original_objc_getRequiredClass
+__ZL25original_objc_lookUpClass
+__ZL25original_objc_getProtocol
+__ZL22original_class_getName
+__ZL25original_protocol_getName
+__ZL36original_objc_copyClassNamesForImage
+__ZL12demangleLock
+__ZL9Demangled
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -miphoneos-version-min=4.3 -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/armv7 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-67/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.o -mlinker-version=302.3.1 -march=armv7a
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-67/source/arclite.mm
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-67
+fixStringForCoreData
+cxxConstruct
+arclite_uninitialized_function
+scanMangledField
+isdigit
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.Internal.sdk/usr/include/ctype.h
+__isctype
+demangledName
+copySwiftV1DemangledName
+copySwiftV1MangledName
+allocateMaybeSwift
+word_align
+isSwift
+initialize_imp
+transcribeProperties
+property_list_nth
+transcribeProtocols
+transcribeMethods
+data
+method_list_nth
+__arclite_objc_copyClassNamesForImage
+__arclite_protocol_getName
+__arclite_class_getName
+__arclite_objc_getProtocol
+__arclite_objc_lookUpClass
+__arclite_objc_getRequiredClass
+__arclite_objc_getMetaClass
+__arclite_objc_getClass
+__arclite_object_getIndexedIvars
+__arclite_objc_allocateClassPair
+metaclass
+__arclite_objc_readClassPair
+transcribeIvars
+ivar_list_nth
+max
+alignment
+ro
+fastFlags
+__arclite_NSKKsD_addEntriesFromDictionary
+__arclite_NSKKsD_setObject_forKey
+__arclite_NSKKsD_removeObjectForKey
+__arclite_NSKKsD_objectForKey
+__arclite_NSKKMS_indexForKey
+__arclite_NSKKMS_fastIndexForKnownKey
+__arclite_NSManagedObject_allocBatch
+__arclite_NSManagedObject_allocWithEntity
+__arclite_NSManagedObject_init
+replaceMethod
+__arclite_NSUndoManagerProxy_isKindOfClass
+add_image_hook_swiftV1
+patch_t<const char **(const char *, unsigned int *)>
+patch_t<const char *(Protocol *)>
+patch_t<const char *(Class)>
+patch_t<Protocol *(const char *)>
+patch_t<Class (const char *)>
+patch_t<void *(id)>
+patch_t<Class (Class, const char *, unsigned long)>
+patch_t<Class (Class, const objc_image_info *)>
+__arclite_objc_storeStrong
+__arclite_objc_release
+__arclite_objc_retain
+__arclite_objc_retainAutoreleasedReturnValue
+__arclite_objc_retainAutoreleaseReturnValue
+__arclite_objc_autoreleaseReturnValue
+__arclite_objc_retainAutorelease
+__arclite_objc_autorelease
+__arclite_objc_retainBlock
+__arclite_object_copy
+fixupCopiedReferences
+_class_getInstanceStart
+alignedInstanceStart
+__arclite_class_usesAutomaticRetainRelease
+classOrSuperClassesUseARR
+__arclite_object_setIvar
+isScannedOffset
+_ivar_getClass
+__arclite_object_setInstanceVariable
+add_image_hook_ARC
+patch_t<void (id *, id)>
+patch_t<id (id)>
+patch_t<void (id)>
+patch_t<id (id, unsigned long)>
+patch_t<void (id, objc_ivar *, id)>
+patch_t<objc_ivar *(id, const char *, void *)>
+__arclite_NSMutableDictionary__setObject_forKeyedSubscript
+__arclite_NSMutableOrderedSet_setObject_atIndexedSubscript
+__arclite_NSOrderedSet_objectAtIndexedSubscript
+__arclite_NSDictionary_objectForKeyedSubscript
+__arclite_NSMutableArray_setObject_atIndexedSubscript
+__arclite_NSArray_objectAtIndexedSubscript
+patch_lazy_pointers
+__arclite_objc_autoreleasePoolPop
+__arclite_objc_autoreleasePoolPush
+add_image_hook_autoreleasepool
+patch_t<void (void *)>
+patch_t<void *()>
+__ARCLite__load
+install_swiftV1
+install_ARC
+install_dict_nil_value
+addOrReplaceMethod
+keyedGetter
+install_subscripting
+addMethod
+indexedGetter
+install_autoreleasepool

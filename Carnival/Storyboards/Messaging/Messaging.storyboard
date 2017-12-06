@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j9N-iS-Wq7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messaging View Controller-->
+        <scene sceneID="ifR-tG-0YX">
+            <objects>
+                <viewController id="j9N-iS-Wq7" customClass="MessagingViewController" customModule="Carnival" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Dn-Sj-DfF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please walk within 10 ft of Check In counter to initiate reservation check in alert." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRU-73-gzd">
+                                <rect key="frame" x="16" y="105" width="343" height="64.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Walk to check in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIi-4Q-Y44">
+                                <rect key="frame" x="16" y="40" width="343" height="53"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="44"/>
+                                <color key="textColor" red="0.062745098040000002" green="0.33333333329999998" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kIi-4Q-Y44" firstAttribute="leading" secondItem="KQ5-8Y-rb4" secondAttribute="leading" constant="16" id="3Dd-1i-Ele"/>
+                            <constraint firstItem="KQ5-8Y-rb4" firstAttribute="trailing" secondItem="PRU-73-gzd" secondAttribute="trailing" constant="16" id="4hE-ex-8bU"/>
+                            <constraint firstItem="kIi-4Q-Y44" firstAttribute="top" secondItem="KQ5-8Y-rb4" secondAttribute="top" constant="20" id="4mi-SY-CaV"/>
+                            <constraint firstItem="PRU-73-gzd" firstAttribute="top" secondItem="kIi-4Q-Y44" secondAttribute="bottom" constant="12" id="5OO-yq-zxe"/>
+                            <constraint firstItem="PRU-73-gzd" firstAttribute="leading" secondItem="KQ5-8Y-rb4" secondAttribute="leading" constant="16" id="JWF-Qi-L02"/>
+                            <constraint firstItem="KQ5-8Y-rb4" firstAttribute="trailing" secondItem="kIi-4Q-Y44" secondAttribute="trailing" constant="16" id="eRK-cs-X9G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KQ5-8Y-rb4"/>
+                    </view>
+                    <connections>
+                        <segue destination="o1V-E1-drg" kind="show" identifier="MessagingDetailViewController" id="mQu-vF-am6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mj9-d8-NlY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-548" y="135.38230884557723"/>
+        </scene>
+        <!--Messaging Detail View Controller-->
+        <scene sceneID="sA8-Hp-s6y">
+            <objects>
+                <viewController storyboardIdentifier="MessagingDetailViewController" id="o1V-E1-drg" customClass="MessagingDetailViewController" customModule="Carnival" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nih-cU-e6U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWl-kv-9VO">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hog-Bo-F8X" firstAttribute="trailing" secondItem="wWl-kv-9VO" secondAttribute="trailing" id="buq-3O-aA6"/>
+                            <constraint firstItem="wWl-kv-9VO" firstAttribute="leading" secondItem="hog-Bo-F8X" secondAttribute="leading" id="rTC-Bh-8Gn"/>
+                            <constraint firstItem="hog-Bo-F8X" firstAttribute="bottom" secondItem="wWl-kv-9VO" secondAttribute="bottom" id="tll-l9-eYp"/>
+                            <constraint firstItem="wWl-kv-9VO" firstAttribute="top" secondItem="hog-Bo-F8X" secondAttribute="top" id="vfM-V1-iZq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hog-Bo-F8X"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="wWl-kv-9VO" id="lCa-m3-RFb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ofC-Gv-BKV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="137"/>
+        </scene>
+    </scenes>
+</document>

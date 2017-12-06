@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VQd-Wv-eBU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Find My Friend-->
+        <scene sceneID="nju-SI-gYL">
+            <objects>
+                <viewController title="Find My Friend" id="VQd-Wv-eBU" customClass="FindMyFriendViewController" customModule="Carnival" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jhN-CT-NQi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfd-NS-rZd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="80"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yme-9B-SMa">
+                                        <rect key="frame" x="310" y="25" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="locationSwitchStateChanged:" destination="VQd-Wv-eBU" eventType="valueChanged" id="NZE-gt-m1T"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Friends To Find Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jj-aR-g9E">
+                                        <rect key="frame" x="16" y="28.5" width="240.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                        <color key="textColor" red="0.062745098040000002" green="0.25490196079999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="yme-9B-SMa" firstAttribute="centerY" secondItem="dfd-NS-rZd" secondAttribute="centerY" id="3EP-Ye-Vov"/>
+                                    <constraint firstAttribute="trailing" secondItem="yme-9B-SMa" secondAttribute="trailing" constant="16" id="H6Q-H3-maE"/>
+                                    <constraint firstItem="0jj-aR-g9E" firstAttribute="centerY" secondItem="dfd-NS-rZd" secondAttribute="centerY" id="KyY-Kq-2pj"/>
+                                    <constraint firstItem="0jj-aR-g9E" firstAttribute="leading" secondItem="dfd-NS-rZd" secondAttribute="leading" constant="16" id="ZOO-rP-B8K"/>
+                                    <constraint firstAttribute="height" constant="80" id="eMQ-UU-9AI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="dfd-NS-rZd" firstAttribute="leading" secondItem="TV0-cf-ZXS" secondAttribute="leading" id="K6t-by-7Cc"/>
+                            <constraint firstItem="dfd-NS-rZd" firstAttribute="top" secondItem="TV0-cf-ZXS" secondAttribute="top" id="dd7-3F-IkT"/>
+                            <constraint firstItem="dfd-NS-rZd" firstAttribute="trailing" secondItem="TV0-cf-ZXS" secondAttribute="trailing" id="jf8-Lc-Baj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TV0-cf-ZXS"/>
+                    </view>
+                    <connections>
+                        <outlet property="shareContainerView" destination="dfd-NS-rZd" id="hFe-Fz-qhV"/>
+                        <outlet property="shareLocationSwitch" destination="yme-9B-SMa" id="9QE-y1-AOT"/>
+                        <segue destination="zOb-V2-4Iu" kind="show" identifier="FindMyFriendListViewController" id="OVj-KV-hWb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LQK-kd-qJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="360.80000000000001" y="277.51124437781112"/>
+        </scene>
+        <!--FindMyFriendListViewController-->
+        <scene sceneID="qcd-yc-ggz">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="FindMyFriendListViewController" storyboardName="FindMyFriendList" referencedIdentifier="FindMyFriendListViewController" id="zOb-V2-4Iu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rW0-uD-q8A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="277"/>
+        </scene>
+    </scenes>
+</document>
