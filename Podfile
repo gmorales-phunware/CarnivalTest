@@ -1,5 +1,5 @@
 source 'ssh://git@github.com/CocoaPods/Specs.git'
-source 'ssh://git@bitbucket.phunware.com:7999/misc/cocoapods-sdk-ios.git'
+# source 'ssh://git@bitbucket.phunware.com:7999/misc/cocoapods-sdk-ios.git'
 
 #platform :ios, '9.0'
 inhibit_all_warnings!
@@ -7,7 +7,7 @@ inhibit_all_warnings!
 def pw_pods
   pod 'PWMapKit', '3.1.7'
   pod 'StepInsideSdk', :http => 'https://phunware-765bf3b3:6dfeef13a4494f79@artifacts.senionlab.com/pods/stepinside-sdk/5.1.1.zip'
-  
+
   pod 'PWEngagement'
 end
 
